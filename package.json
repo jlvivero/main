@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "docpad": "~6.64.2",
+    "docpad-plugin-ghpages": "~2.4.3",
     "docpad-plugin-jade": "~2.6.2",
     "docpad-plugin-nodesass": "~2.3.0"
   },
