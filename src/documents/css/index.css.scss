@@ -1,9 +1,63 @@
 @import "helpers.scss";
 
+$black: #444;
+$white: #eee;
+
 html, body {
   width: 100%;
   min-height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Lato', 'sans-serif';
+}
+
+#profile {
+  width: 100%;
+  padding: 3px 0;
+  background-color: $black;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+
+  a.profile-image {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 1px solid #eee;
+    }
+
+    div.about-me {
+      position: absolute;
+      color: $white;
+      font-weight: 100;
+      width: 100px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 20px;
+      top: 0px;
+      left: -105px;
+      text-align: right;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      @include transition(opacity .1s linear);
+    }
+
+    &:hover div.about-me {
+      opacity: 1;
+      filter: alpha(opacity=100);
+    }
+  }
+}
+
+#content {
+  width: 800px;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
