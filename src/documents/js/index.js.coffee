@@ -22,7 +22,7 @@ do ($ = jQuery) ->
     profileImage.css
       'width': profileImageHeight
       'height': profileImageHeight
-      'margin-top': (profileHeight - profileImageHeight) / 2
+      'margin-top': -1 * profileImageHeight / 2
     $('div.about-me', profileImage).css
       'top': (profileImageHeight - profConst.minHeight) / 2
 
