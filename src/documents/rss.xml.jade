@@ -1,0 +1,17 @@
+doctype xml
+rss(version='2.0')
+	channel
+		title= site.title
+		link= site.url
+		description= site.description
+
+		each post in sortByTimestamp(getCollection('html').findAll({layout: 'post'})).toJSON()
+			item
+				title= post.title
+				link= site.url + removeIndexHtmlFromUrl(post.url)
+				guid= site.url + removeIndexHtmlFromUrl(post.url)
+				pubDate= convertTimestampToRfc822(post.timestamp)
+				description= post.contentRenderedWithoutLayouts
+				author= site.email
+				each tag in post.tags
+					category= tag
