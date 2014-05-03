@@ -37,8 +37,14 @@ do ($ = jQuery) ->
       'width': profileImageHeight
       'height': profileImageHeight
       'margin-top': -1 * profileImageHeight / 2
-    $('div.about-me', profileImage).css
+
+    aboutMe = $('div.about-me', profileImage)
+    aboutMe.css
       'top': (profileImageHeight - profConst.minHeight) / 2
+    if scrollTop > windowHeight
+      aboutMe.removeClass 'thin'
+    else
+      aboutMe.addClass 'thin'
 
   renewWindowHeight = ->
     windowHeight = $(window).height()

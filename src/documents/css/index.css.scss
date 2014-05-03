@@ -75,6 +75,10 @@ html, body {
         opacity: 0;
         filter: alpha(opacity=0);
         @include transition(opacity .1s linear);
+
+        &.thin {
+          font-weight: 100;
+        }
       }
 
       &:hover div.about-me {
