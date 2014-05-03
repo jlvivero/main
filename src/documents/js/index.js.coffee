@@ -41,10 +41,6 @@ do ($ = jQuery) ->
     aboutMe = $('div.about-me', profileImage)
     aboutMe.css
       'top': (profileImageHeight - profConst.minHeight) / 2
-    if scrollTop > windowHeight
-      aboutMe.removeClass 'thin'
-    else
-      aboutMe.addClass 'thin'
 
   renewWindowHeight = ->
     windowHeight = $(window).height()
@@ -72,7 +68,7 @@ do ($ = jQuery) ->
     renewWindowHeight()
     updateProfile()
     window.onfontactive.push ->
-      $('#profile .profile-wrapper').addClass 'shown'
+      $('#profile .wrapper').addClass 'shown'
     if isTouchDevice
       touchScrollSupport()
       window.onfontactive.push touchScrollUpdate
