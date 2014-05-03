@@ -67,6 +67,7 @@ do ($ = jQuery) ->
     updateProfile()
     if isTouchDevice
       touchScrollSupport()
+      window.onfontactive = touchScrollUpdate
   $(window).resize ->
     renewWindowHeight()
     updateProfile()
