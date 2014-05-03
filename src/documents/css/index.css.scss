@@ -26,6 +26,7 @@ html, body {
     height: 0;
     top: 50%;
     left: 0;
+    z-index: 10;
 
     a.profile-image {
       display: block;
@@ -73,6 +74,8 @@ html, body {
     width: 100%;
     height: 30px;
     line-height: 30px;
+    z-index: 1;
+
     i {
       line-height: 30px;
       font-size: 25px;
