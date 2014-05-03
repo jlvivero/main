@@ -27,6 +27,12 @@ html, body {
     top: 50%;
     left: 0;
     z-index: 10;
+    opacity: 0;
+    @include transition(opacity 1s linear);
+
+    &.shown {
+      opacity: 1;
+    }
 
     div.hi-there {
       position: absolute;
