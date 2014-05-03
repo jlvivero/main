@@ -15,7 +15,7 @@ do ($ = jQuery) ->
   scrollObject = if isTouchDevice then '#scroll-wrapper'  else document
 
   windowHeight = null
-  updateProfile = () ->
+  updateProfile = ->
     profileDiv = $ '#profile'
     scrollTop = $(scrollObject).scrollTop()
 
@@ -36,7 +36,7 @@ do ($ = jQuery) ->
     $('div.about-me', profileImage).css
       'top': (profileImageHeight - profConst.minHeight) / 2
 
-  renewWindowHeight = () ->
+  renewWindowHeight = ->
     windowHeight = $(window).height()
     $('#content').css 'margin-top', windowHeight
 
