@@ -27,6 +27,10 @@ do ($ = jQuery) ->
     opacity = Math.max opacity, profConst.minOpacity
     profileDiv.css 'opacity', opacity
 
+    buttonOpacity = (windowHeight - scrollTop * 4) / windowHeight
+    buttonOpacity = Math.max buttonOpacity, 0
+    $('div.scroll-down').css 'opacity', buttonOpacity
+
     profileImage = $('a.profile-image', profileDiv)
     profileImageHeight = Math.min profileHeight, profConst.imageMaxHeight
     profileImage.css
