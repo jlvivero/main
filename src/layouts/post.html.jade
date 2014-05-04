@@ -29,6 +29,13 @@ html
             a.tag(href='#{getTagCloud()[tag].url}') ##{tag}
       div.content!= content
 
+      // Disqus Comment
+      div#disqus_thread
+      script(src='/js/disqus.js')
+      a.dsq-brlink(href="http://disqus.com")
+        | comments powered by
+        span.logo-disqus Disqus
+
     script(src='/js/jquery-1.11.1.min.js')
     script(src='//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js')
     script(src='/js/webfont.js')
