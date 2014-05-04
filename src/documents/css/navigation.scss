@@ -92,5 +92,13 @@
     &.home {
       left: 5px;
     }
+
+    @media #{$mobile-portrait} {
+      font-weight: normal;
+    }
+
+    @media #{$mobile-landscape} {
+      font-weight: normal;
+    }
   }
 }

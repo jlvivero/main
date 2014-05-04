@@ -52,6 +52,14 @@ html, body {
     margin: 25px 0;
     @import 'markdown.scss';
   }
+
+  @media #{$mobile-portrait} {
+    width: 100%;
+  }
+
+  @media #{$mobile-landscape} {
+    width: 100%;
+  }
 }
 
 html.wf-active #content {

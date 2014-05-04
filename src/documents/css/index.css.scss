@@ -56,6 +56,16 @@ html {
       font-weight: 100;
       font-style: italic;
       bottom: 120px;
+
+      @media #{$mobile-portrait} {
+        font-size: 50px;
+      }
+
+      @media #{$mobile-landscape} {
+        font-size: 15px;
+        bottom: 105px;
+        font-weight: normal;
+      }
     }
 
     a.profile-image {
@@ -113,6 +123,19 @@ html {
           color: $white;
         }
       }
+
+      @media #{$mobile-portrait} {
+        font-size: 15px;
+        font-weight: normal;
+      }
+
+      @media #{$mobile-landscape} {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 11;
+        font-weight: normal;
+      }
     }
   }
 
@@ -155,6 +178,14 @@ html {
 
     &.rss {
       right: 5px;
+    }
+
+    @media #{$mobile-portrait} {
+      font-weight: normal;
+    }
+
+    @media #{$mobile-landscape} {
+      font-weight: normal;
     }
   }
 }

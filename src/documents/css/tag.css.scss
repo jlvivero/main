@@ -19,6 +19,21 @@ html, body {
 
   div.tag-title {
     font-size: 60px;
+    @media #{$mobile-portrait} {
+      font-size: 30px;
+    }
+
+    @media #{$mobile-landscape} {
+      font-size: 30px;
+    }
+  }
+
+  @media #{$mobile-portrait} {
+    width: 100%
+  }
+
+  @media #{$mobile-landscape} {
+    width: 100%
   }
 }
 

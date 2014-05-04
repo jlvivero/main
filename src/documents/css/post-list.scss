@@ -1,3 +1,5 @@
+@import 'helpers.scss';
+
 #content {
   width: 800px;
   margin: 0 auto;
@@ -29,6 +31,28 @@
         &:hover {
           text-decoration: underline;
         }
+      }
+    }
+  }
+
+  @media #{$mobile-portrait} {
+    width: 100%;
+    div.info span.tags {
+      display: block;
+      a.tag {
+        margin-left: 0 !important;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  @media #{$mobile-landscape} {
+    width: 100%;
+    div.info span.tags {
+      display: block;
+      a.tag {
+        margin-left: 0 !important;
+        margin-right: 5px;
       }
     }
   }

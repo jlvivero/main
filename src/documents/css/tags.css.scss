@@ -41,6 +41,14 @@ html, body {
       }
     }
   }
+
+  @media #{$mobile-portrait} {
+    width: 100%;
+  }
+
+  @media #{$mobile-landscape} {
+    width: 100%;
+  }
 }
 
 html.wf-active #content {
