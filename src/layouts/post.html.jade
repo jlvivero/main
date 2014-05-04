@@ -3,15 +3,34 @@ html
   meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
   meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
 
-  title #{document.title}
+  title= document.title
 
   link(rel='shortcut icon', href='/images/profile.png')
   link(rel='stylesheet', type='text/css', href='/css/normalize.css')
   link(rel='stylesheet', type='text/css', href='/css/font-awesome.min.css')
-  link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Lato:100,300')
-  link(rel='stylesheet', type='text/css', href='/css/default.css')
-
+  link(rel='stylesheet', type='text/css', href='/css/post.css')
+  link(rel='stylesheet', type='text/css', href='/css/highlight.default.css')
   body
-    div.container
-      h1.title= document.title
-      div!= content
+    div#profile
+      div.shown-after-font-loaded
+        div.profile-wrapper
+          a.profile-image(href='/about')
+            img(src='/images/profile.png')
+            div.about-me about me
+        a.menu.home(href='/') HOME
+        a.menu.rss(href='/rss.xml') RSS
+
+    div#content
+      div.info
+        h1.title= document.title
+        div.datetime= convertTimestampToRfc822(document.timestamp)
+        div.tags
+          each tag in document.tags
+            a.tag(href='#{getTagCloud()[tag].url}') ##{tag}
+      div.content!= content
+
+    script(src='/js/jquery-1.11.1.min.js')
+    script(src='//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js')
+    script(src='/js/webfont.js')
+    script(src='/js/highlight.pack.js')
+    script(src='/js/md-highlight.js')
