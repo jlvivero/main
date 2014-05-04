@@ -5,6 +5,14 @@ moment = require 'moment'
 
 # Define the DocPad Configuration
 docpadConfig =
+  plugins:
+    tags:
+      relativeDirPath: 'tag'
+      extension: '.html'
+      injectDocumentHelper: (doc) ->
+        doc.setMeta
+          layout: 'tag'
+
   templateData:
     site:
       title: 'noraesae'
@@ -23,6 +31,13 @@ docpadConfig =
     convertTimestampToRfc822: (timestamp) ->
       datetime = moment.unix(Number(timestamp)).zone(moment().zone())
       datetime.format('ddd, DD MMM YYYY HH:mm:ss ZZ')
+
+    getMainTags: (tags) ->
+      tagArray = for tag, data of tags
+        data
+      tagArray.sort (a, b) ->
+        return b.count - a.count
+      tagArray[0..2]
 
 # Export the DocPad Configuration
 module.exports = docpadConfig

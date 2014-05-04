@@ -13,6 +13,8 @@
     "docpad-plugin-jade": "~2.6.2",
     "docpad-plugin-marked": "~2.2.1",
     "docpad-plugin-nodesass": "~2.3.0",
+    "docpad-plugin-tagcloud": "~2.0.0",
+    "docpad-plugin-tags": "~2.0.7",
     "moment": "^2.6.0"
   },
   "main": "node_modules/docpad/bin/docpad-server",

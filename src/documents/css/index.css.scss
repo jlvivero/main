@@ -27,6 +27,7 @@ html, body {
   padding: 3px 0;
   background-color: $black;
   position: fixed;
+  overflow: hidden;
   top: 0px;
   left: 0px;
 
@@ -85,6 +86,25 @@ html, body {
       &:hover div.about-me {
         opacity: 1;
         filter: alpha(opacity=100);
+      }
+    }
+
+    div.i-write-about {
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+      color: #eee;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 100;
+      top: 120px;
+
+      div.tags a.tag {
+        color: $white;
+        text-decoration: none;
+        &:visited {
+          color: $white;
+        }
       }
     }
   }

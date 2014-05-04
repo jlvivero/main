@@ -19,6 +19,13 @@ html
           a.profile-image(href='/about')
             img(src='/images/profile.png')
             div.about-me about me
+          div.i-write-about
+            div.opening I write about
+            div.tags
+              each tag in getMainTags(getTagCloud())
+                a.tag(href='#{tag.url}')= tag.tag
+                span ,&nbsp
+              a.tag(href='/tags') etc.
         div.scroll-down
           i.fa.fa-sort-down
         a.rss(href='/rss.xml') RSS
