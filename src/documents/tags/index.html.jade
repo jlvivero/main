@@ -1,0 +1,31 @@
+doctype html
+html
+  meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+
+  title Tags
+
+  link(rel='shortcut icon', href='/images/profile.png')
+  link(rel='stylesheet', type='text/css', href='/css/normalize.css')
+  link(rel='stylesheet', type='text/css', href='/css/font-awesome.min.css')
+  link(rel='stylesheet', type='text/css', href='/css/tags.css')
+
+  body
+    div#profile
+      div.shown-after-font-loaded
+        div.profile-wrapper
+          a.profile-image(href='/about')
+            img(src='/images/profile.png')
+            div.about-me about me
+        a.menu.home(href='/') HOME
+        a.menu.rss(href='/rss.xml') RSS
+
+    div#content
+      div.tag-title Tags
+      div.tagcloud
+        each tag in getTagCloud()
+          a.tag(href='#{tag.url}', style='font-size: #{tagWeightToFontSize(tag.weight)}px')= tag.tag
+
+    script(src='/js/jquery-1.11.1.min.js')
+    script(src='//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js')
+    script(src='/js/webfont.js')

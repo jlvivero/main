@@ -11,14 +11,35 @@ html, body {
 }
 
 @import 'navigation.scss';
-@import 'post-list.scss';
 
 #content {
+  width: 800px;
+  margin: 0 auto;
+  padding-bottom: 50px;
   margin-top: 60px;
   visibility: hidden;
 
   div.tag-title {
     font-size: 60px;
+  }
+
+  div.tagcloud {
+    margin-top: 20px;
+
+    a.tag {
+      color: black;
+      text-decoration: none;
+      display: inline-block;
+      margin-right: 20px;
+
+      &:visited {
+        color: black;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 

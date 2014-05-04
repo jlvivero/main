@@ -7,7 +7,7 @@ moment = require 'moment'
 docpadConfig =
   plugins:
     tags:
-      relativeDirPath: 'tag'
+      relativeDirPath: 'tag/'
       extension: '.html'
       injectDocumentHelper: (doc) ->
         doc.setMeta
@@ -38,6 +38,9 @@ docpadConfig =
       tagArray.sort (a, b) ->
         return b.count - a.count
       tagArray[0..2]
+
+    tagWeightToFontSize: (weight) ->
+      ((weight * 30) | 0) + 20
 
     arrangePostData: (postData) ->
       result = {}
