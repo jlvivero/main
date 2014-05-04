@@ -12,6 +12,15 @@ html, body {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
+.shown-after-font-loaded {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.wf-active .shown-after-font-loaded {
+  visibility: visible;
+}
+
 #profile {
   width: 100%;
   height: 100%;
@@ -20,15 +29,6 @@ html, body {
   position: fixed;
   top: 0px;
   left: 0px;
-
-  div.wrapper {
-    opacity: 0;
-    @include transition(opacity 1s linear);
-
-    &.shown {
-      opacity: 1;
-    }
-  }
 
   div.profile-wrapper {
     position: absolute;
