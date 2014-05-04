@@ -44,7 +44,9 @@ do ($ = jQuery) ->
 
   renewWindowHeight = ->
     windowHeight = $(window).height()
-    $('#content').css 'margin-top', windowHeight
+    $('#content').css
+      'margin-top': windowHeight
+      'min-height': windowHeight - profConst.minHeight - 6 - 50 # paddings
 
   touchScrollSupport = ->
     body = $('body').css

@@ -12,6 +12,13 @@ html, body {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
+html {
+  background-color: #444;
+  &.wf-active {
+    background-color: white;
+  }
+}
+
 .shown-after-font-loaded {
   visibility: hidden;
   opacity: 0;
