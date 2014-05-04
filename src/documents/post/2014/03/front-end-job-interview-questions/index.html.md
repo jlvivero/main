@@ -1,7 +1,7 @@
 ---
 title: Front-end Job Interview Questions
 layout: post
-timestamp: 1399059733
+timestamp: 1395743021
 tags:
  - Front-end
  - JavaScript
@@ -131,7 +131,7 @@ The majority of the questions were plucked from an [oksoclap](http://oksoclap.co
 * How do you go about testing your JavaScript?
 * AMD vs. CommonJS?
 * What's a hashtable?
-* Explain why the following doesn't work as an IIFE: `function foo(){ }();`. 
+* Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
   * What needs to be changed to properly make it an IIFE?
 * What's the difference between a variable that is: `null`, `undefined` or `undeclared`?
   * How would you go about checking for any of these states?

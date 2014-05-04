@@ -1,7 +1,7 @@
 ---
 title: Tiny but perfect jQuery scrollbar plugin
 layout: post
-timestamp: 1399060322
+timestamp: 1386239021
 tags:
  - JavaScript
  - jQuery
@@ -77,7 +77,7 @@ To make this plugin *perfect*, some requirements were not avoidable. But they're
 The requirement below is for perfect-scrollbar &lt;= 0.3.4
 
 * there must be the *one* content element(like div) for the container.
- 
+
 Optional parameters
 -------------------
 

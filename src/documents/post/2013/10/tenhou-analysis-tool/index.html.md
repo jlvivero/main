@@ -1,7 +1,7 @@
 ---
 title: Tenhou Analysis Tool
 layout: post
-timestamp: 1399059949
+timestamp: 1381829021
 tags:
  - JavaScript
  - Node.js

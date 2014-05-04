@@ -1,7 +1,7 @@
 ---
 title: Screen capture and upload tool for OS X
 layout: post
-timestamp: 1399059889
+timestamp: 1391855021
 tags:
  - OS X
  - Python

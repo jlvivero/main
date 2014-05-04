@@ -1,7 +1,7 @@
 ---
 title: Subway - a web-based IRC client
 layout: post
-timestamp: 1399060146
+timestamp: 1380792221
 tags:
  - Node.js
  - JavaScript
@@ -40,7 +40,7 @@ Installation
         $ cd subway
 
 2. Install the dependencies using npm:
-    
+
       $ npm install
 
 3. Launch the web server
@@ -68,7 +68,7 @@ and it will use xhr-polling instead.
 
 ### Heroku
 
-Set the following environment vars to your app: 
+Set the following environment vars to your app:
 
 * USE\_POLLING=1
 

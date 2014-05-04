@@ -1,7 +1,7 @@
 ---
 title: See great pictures with your friend!
 layout: post
-timestamp: 1399060218
+timestamp: 1392805421
 tags:
  - JavaScript
  - Node.js
@@ -32,17 +32,17 @@ Assuming you already have node.js, npm and mongo run:
     $ cd scenic
     $ npm install
     $ node scenic.js
-    
+
 Settings
 --------
 
 **settings.py** includes some settings you can change.
-    
+
     var settings = module.exports = {
         port: 8000,
         mongo_uri: 'mongodb://localhost/scenic'
     };
-    
+
 You can change port to make Scenic run on.
 You can also change mongodb's uri if mongo is not running on localhost.
 
@@ -54,7 +54,7 @@ This is a simple use of forever to deploy Scenic.
 
     $ npm install forever -g
     $ forever start scenic.js
-    
+
 Browser Supports
 ----------------
 

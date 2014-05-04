@@ -1,7 +1,7 @@
 ---
 title: Yet another useless Atom package to literally *party hard*
 layout: post
-timestamp: 1399060062
+timestamp: 1399109021
 tags:
  - CoffeeScript
  - Atom
