@@ -28,7 +28,7 @@ html
               a.tag(href='/tags') etc.
         div.scroll-down
           i.fa.fa-sort-down
-        a.rss(href='/rss.xml') RSS
+        a.menu.rss(href='/rss.xml') RSS
 
     div#content
       each yearObj in arrangePostData(getCollection('html').findAll({layout: 'post'}).toJSON())

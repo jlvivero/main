@@ -8,8 +8,33 @@ html
   link(rel='shortcut icon', href='/images/profile.png')
   link(rel='stylesheet', type='text/css', href='/css/normalize.css')
   link(rel='stylesheet', type='text/css', href='/css/font-awesome.min.css')
-  link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Lato:100,300')
-  link(rel='stylesheet', type='text/css', href='/css/default.css')
+  link(rel='stylesheet', type='text/css', href='/css/tag.css')
 
   body
-    h1= document.tag
+    div#profile
+      div.shown-after-font-loaded
+        div.profile-wrapper
+          a.profile-image(href='/about')
+            img(src='/images/profile.png')
+            div.about-me about me
+        a.menu.home(href='/') HOME
+        a.menu.rss(href='/rss.xml') RSS
+
+    div#content
+      div.tag-title Tag:#{document.tag}
+      each yearObj in arrangePostData(getCollection('html').findAll({layout: 'post', tags: {$in: document.tag}}).toJSON())
+        h1= yearObj.year
+        each monthObj in yearObj.months
+          h2= monthObj.monthStr
+          each post in monthObj.posts
+            div.post
+              a.title(href='#{removeIndexHtmlFromUrl(post.url)}')= post.title
+              div.info
+                span.datetime= convertTimestampToRfc822(post.timestamp)
+                span.tags
+                  each tag in post.tags
+                    a.tag(href='#{getTagCloud()[tag].url}') ##{tag}
+
+    script(src='/js/jquery-1.11.1.min.js')
+    script(src='//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js')
+    script(src='/js/webfont.js')

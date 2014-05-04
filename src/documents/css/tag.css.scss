@@ -1,0 +1,29 @@
+$black: #444;
+$white: #eee;
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', 'sans-serif';
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+html {
+  visibility: hidden;
+}
+html.wf-active {
+  visibility: visible;
+}
+
+@import 'navigation.scss';
+@import 'post-list.scss';
+
+#content {
+  margin-top: 60px;
+
+  div.tag-title {
+    font-size: 60px;
+  }
+}
