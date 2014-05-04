@@ -31,7 +31,18 @@ html
         a.rss(href='/rss.xml') RSS
 
     div#content
-      | Hello.
+      each yearObj in arrangePostData(getCollection('html').findAll({layout: 'post'}).toJSON())
+        h1= yearObj.year
+        each monthObj in yearObj.months
+          h2= monthObj.monthStr
+          each post in monthObj.posts
+            div.post
+              a.title(href='#{removeIndexHtmlFromUrl(post.url)}')= post.title
+              div.info
+                span.datetime= convertTimestampToRfc822(post.timestamp)
+                span.tags
+                  each tag in post.tags
+                    a.tag(href='#{getTagCloud()[tag].url}') ##{tag}
 
     script(src='/js/jquery-1.11.1.min.js')
     script(src='//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js')

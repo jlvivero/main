@@ -39,5 +39,37 @@ docpadConfig =
         return b.count - a.count
       tagArray[0..2]
 
+    arrangePostData: (postData) ->
+      result = {}
+      for post in postData
+        datetime = moment.unix(post.timestamp)
+        year = datetime.year()
+        month = datetime.month()
+        if not result[year]?
+          result[year] = {}
+        if not result[year][month]?
+          result[year][month] = []
+        result[year][month].push post
+      result = for year, months of result
+        {
+          year: year
+          months: for month, posts of months
+            {
+              month: month
+              monthStr: moment().month(Number(month)).format('MMM')
+              posts: posts
+            }
+        }
+      # Sorting
+      for yearObj in result
+        for monthObj in yearObj.months
+          monthObj.posts.sort (a, b) ->
+            b.timestamp - a.timestamp
+        yearObj.months.sort (a, b) ->
+          b.month - a.month
+      result.sort (a, b) ->
+        b.year - a.year
+      result
+
 # Export the DocPad Configuration
 module.exports = docpadConfig

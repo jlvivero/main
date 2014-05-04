@@ -160,6 +160,36 @@ html {
   width: 800px;
   margin: 0 auto;
   padding-bottom: 50px;
+
+  div.post {
+    margin-bottom: 10px;
+    a.title {
+      text-decoration: none;
+      color: black;
+      font-size: 23px;
+      &:visited {
+        color: black;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    div.info {
+      color: #666;
+      span.tags a.tag {
+        text-decoration: none;
+        margin-left: 5px;
+        color: #666;
+        &:visited {
+          color: #666;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }
 
 #scroll-wrapper {
