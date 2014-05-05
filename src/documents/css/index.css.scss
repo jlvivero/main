@@ -98,6 +98,18 @@ html {
         opacity: 0;
         filter: alpha(opacity=0);
         @include transition(opacity .1s linear);
+
+        @media #{$mobile-portrait} {
+          font-weight: normal;
+          width: 300%;
+          left: -100%;
+          text-align: center;
+
+        }
+
+        @media #{$mobile-landscape} {
+          font-weight: normal;
+        }
       }
 
       &:hover div.about-me {
