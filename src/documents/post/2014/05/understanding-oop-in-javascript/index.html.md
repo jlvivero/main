@@ -211,4 +211,4 @@ Conclusion
 Until now, we've covered how a function works as a *constructor* and a *prototype* is shared through several objects. The fact is quite simple, but it's very important for us to know how they really work internally. This is a very basic knowledge and many developers may already know it. But I'll be really happy if this article can be helpful for the developers who lost their way in OOP ocean of JavaScript.
 
 ### Excuse my English
-I just started writing blog posts in English, and there'll be a lot of mistakes in grammar or expression. I'll be *really* happy if you help me to improve this post. You can leave any comment [here](https://github.com/noraesae/net/tree/master/src/documents/post/2014/05/understanding-oop-in-javascript/index.html.md) to help me. Thanks in advance.
+I just started writing blog posts in English, and there'll be a lot of mistakes in grammar or expression. I'll be *really* happy if you help me to improve this post. You can leave any comment [here](https://github.com/noraesae/net/issues/1) to help me. Thanks in advance.
