@@ -5,4 +5,7 @@ do ($=jQuery, hl=hljs) ->
     lang = obj.attr 'class'
     if lang? and lang
       lang = lang.replace /^lang\-/, ''
-      obj.html hl.highlight(lang, code).value
+      try
+        obj.html hl.highlight(lang, code).value
+      catch error
+        console.error error
