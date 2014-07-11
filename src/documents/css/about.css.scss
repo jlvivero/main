@@ -53,15 +53,16 @@ a.profile {
   overflow: hidden;
   border-radius: 100px;
   border: 1px solid $white;
-  @include browser-specific-transition(transform .5s ease-in);
-
-  &:hover {
-    @include transform(rotate(360deg));
-  }
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 
   img {
     width: 100%;
     height: 100%;
+    @include browser-specific-transition(transform .1s linear);
+
+    &:hover {
+      @include transform(scale(1.1, 1.1));
+    }
   }
 }
 
