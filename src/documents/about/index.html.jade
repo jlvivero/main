@@ -8,29 +8,24 @@ html
 
     link(rel='shortcut icon', href='/images/profile.png')
     link(rel='stylesheet', type='text/css', href='/css/normalize.css')
-    link(rel='stylesheet', type='text/css', href='/css/font-awesome.min.css')
     link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Lato:100,300')
     link(rel='stylesheet', type='text/css', href='/css/about.css')
 
   body
-    div.container
+    div.container#Container
       h1.title noraesae
       a.profile(href='#')
-        img(src='/images/profile.png', alt="It's me!")
+        img.avatar(src='/images/profile.png', alt="It's me!")
+        img.real(src='/images/about-profile.jpg', alt="It's me!")
       div.name Hyeonje Alex Jun
-      div.icons
-        a.icon(href='http://noraesae.net')
-          i.fa.fa-terminal
-          span Dev
-        a.icon(href='http://twitter.com/noraesae')
-          i.fa.fa-twitter
-          span Twitter
-        a.icon(href='http://github.com/noraesae')
-          i.fa.fa-github
-          span Github
-        a.icon(href='http://yuiazu.net')
-          i.fa.fa-tumblr
-          span Tumblr
-        a.icon(href='mailto:me@noraesae.net')
-          i.fa.fa-envelope
-          span Dev
+      div.description Developer. Subcurturist. Computer Science @ Yonsei Univ.
+      div.hello I <span class='heart'>♥</span> JavaScript, Scala and many other things!
+      div.contacts
+        a.contact(href='http://noraesae.net') blog
+        a.contact(href='http://twitter.com/noraesae') twitter
+        a.contact(href='http://github.com/noraesae') github
+        a.contact(href='https://medium.com/@noraesae') medium
+        a.contact(href='http://yuiazu.net') tumblr
+        a.contact(href='mailto:me@noraesae.net') mail
+    script(src='/js/jquery-1.11.1.min.js')
+    script(src='/js/about.js')

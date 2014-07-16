@@ -24,3 +24,10 @@ $mobile-landscape: "screen and (max-device-width: 640px) and (orientation: lands
   -o-transform: $t;
   -ms-transform: $t;
 }
+
+@mixin opacity($value) {
+  $IEValue: $value * 100;
+  opacity: $value;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+  filter: alpha(opacity=$IEValue);
+}
