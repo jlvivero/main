@@ -9,28 +9,10 @@ html
     link(rel='shortcut icon', href='/images/profile.png')
     link(rel='stylesheet', type='text/css', href='/css/normalize.css')
     link(rel='stylesheet', type='text/css', href='/css/font-awesome.min.css')
-    link(rel='stylesheet', type='text/css', href='/css/perfect-scrollbar.css')
     link(rel='stylesheet', type='text/css', href='/css/index.css')
 
   body
-    div#profile
-      div.shown-after-font-loaded
-        div.profile-wrapper
-          div.hi-there Hi there!
-          a.profile-image(href='/about')
-            img(src='/images/profile.png')
-            div.about-me about me
-          div.i-write-about
-            div.opening I write about
-            div.tags
-              each tag in getMainTags(getTagCloud())
-                a.tag(href='#{tag.url}')= tag.tag
-                span ,&nbsp
-              a.tag(href='/tags') etc.
-        div.scroll-down
-          i.fa.fa-sort-down
-        a.menu.rss(href='/rss.xml') RSS
-
+    include ../common/navigation.jade
     div#content
       each yearObj in arrangePostData(getCollection('html').findAll({layout: 'post'}).toJSON())
         h1= yearObj.year
@@ -48,5 +30,3 @@ html
     script(src='/js/jquery-1.11.1.min.js')
     script(src='//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js')
     script(src='/js/webfont.js')
-    script(src='/js/perfect-scrollbar-0.4.10.min.js')
-    script(src='/js/index.js')

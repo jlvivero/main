@@ -13,15 +13,7 @@ html
     link(rel='stylesheet', type='text/css', href='/css/highlight.default.css')
 
   body
-    div#profile
-      div.shown-after-font-loaded
-        div.profile-wrapper
-          a.profile-image(href='/about')
-            img(src='/images/profile.png')
-            div.about-me about me
-        a.menu.home(href='/') HOME
-        a.menu.rss(href='/rss.xml') RSS
-
+    include ../common/navigation.jade
     div#content
       div.info
         h1.title= document.title

@@ -1,0 +1,13 @@
+$black: #444;
+$white: #fff;
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', 'sans-serif';
+  -webkit-font-smoothing: subpixel-antialiased;
+  background-color: $white;
+  color: $black;
+}
