@@ -1,0 +1,11 @@
+each post, i in arrangePostData(getCollection('html').findAll({layout: 'post'}).toJSON())
+  if i !== 0
+    div.separator
+
+  div.post
+    p.datetime= convertTimestampToRfc822(post.timestamp)
+    a.title(href='#{removeIndexHtmlFromUrl(post.url)}')
+      h2= post.title
+    p.tags
+      each tag in post.tags
+        a.tag(href='#{getTagCloud()[tag].url}') ##{tag}

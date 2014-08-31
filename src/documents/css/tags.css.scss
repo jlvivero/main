@@ -1,40 +1,19 @@
 @import 'base.scss';
 @import 'navigation.scss';
+@import 'content.scss';
+@import 'footer.scss';
 
 #content {
-  width: 800px;
-  margin: 0 auto;
-  padding-bottom: 50px;
-  margin-top: 60px;
-  visibility: hidden;
-
-  div.tag-title {
-    font-size: 60px;
+  h1.tag-title {
+    margin: 0;
   }
-
   div.tagcloud {
     margin-top: 20px;
 
-    a.tag {
+    a.tag, a.tag:visited {
       color: black;
       display: inline-block;
       margin-right: 20px;
-
-      &:visited {
-        color: black;
-      }
     }
   }
-
-  @media #{$mobile-portrait} {
-    width: 100%;
-  }
-
-  @media #{$mobile-landscape} {
-    width: 100%;
-  }
-}
-
-html.wf-active #content {
-  visibility: visible;
 }

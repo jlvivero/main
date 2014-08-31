@@ -1,0 +1,15 @@
+#content {
+  width: 800px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  padding-top: 80px;
+
+  @media #{$mobile-portrait} {
+    width: 100%;
+    padding-top: 60px;
+  }
+  @media #{$mobile-landscape} {
+    width: 100%;
+    padding-top: 60px;
+  }
+}

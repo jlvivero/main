@@ -1,42 +1,12 @@
-$black: #444;
-$white: #eee;
-
-html, body {
-  width: 100%;
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: 'Lato', 'sans-serif';
-  -webkit-font-smoothing: subpixel-antialiased;
-}
-
+@import 'base.scss';
 @import 'navigation.scss';
-@import 'post-list.scss';
+@import 'content.scss';
+@import 'footer.scss';
 
 #content {
-  margin-top: 60px;
-  visibility: hidden;
-
-  div.tag-title {
-    font-size: 60px;
-    @media #{$mobile-portrait} {
-      font-size: 30px;
-    }
-
-    @media #{$mobile-landscape} {
-      font-size: 30px;
-    }
+  h1.tag-title {
+    margin: 0;
+    margin-bottom: 20px;
   }
-
-  @media #{$mobile-portrait} {
-    width: 100%
-  }
-
-  @media #{$mobile-landscape} {
-    width: 100%
-  }
-}
-
-html.wf-active #content {
-  visibility: visible;
+  @import 'post-list.scss';
 }

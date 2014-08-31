@@ -8,25 +8,14 @@ html
 
     link(rel='shortcut icon', href='/images/profile.png')
     link(rel='stylesheet', type='text/css', href='/css/normalize.css')
-    link(rel='stylesheet', type='text/css', href='/css/font-awesome.min.css')
     link(rel='stylesheet', type='text/css', href='/css/index.css')
+    link(rel='stylesheet', type='text/css', href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic')
+    link(rel='stylesheet', type='text/css', href='//fonts.googleapis.com/css?family=Lato:900,300')
 
   body
     include ../common/navigation.jade
     div#content
-      each yearObj in arrangePostData(getCollection('html').findAll({layout: 'post'}).toJSON())
-        h1= yearObj.year
-        each monthObj in yearObj.months
-          h2= monthObj.monthStr
-          each post in monthObj.posts
-            div.post
-              a.title(href='#{removeIndexHtmlFromUrl(post.url)}')= post.title
-              div.info
-                span.datetime= convertTimestampToRfc822(post.timestamp)
-                span.tags
-                  each tag in post.tags
-                    a.tag(href='#{getTagCloud()[tag].url}') ##{tag}
+      include ../common/post-list.jade
+    include ../common/footer.jade
 
     script(src='/js/jquery-1.11.1.min.js')
-    script(src='//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js')
-    script(src='/js/webfont.js')

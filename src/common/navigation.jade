@@ -1,13 +1,8 @@
-div#Navigation
-  div.nav-contents.shown-after-font-loaded
+div#navigation
+  div.nav-contents
     div(style='float: left; height: 0;')
-      a.link-button.home(href='/')
-        i.fa.fa-home
-      a.link-button.rss(href='/rss.xml')
-        i.fa.fa-rss
+      a.link-button.home(href='/') HOME
     div(style='float: right; height: 0;')
-      a.link-button.tags(href='/tags')
-        i.fa.fa-tags
-    a.profile-image(href='/about')
-      img(src="/images/profile.png")
-      div.about-me about me
+      a.link-button.tags(href='/about') ABOUT
+      a.link-button.tags(href='/tags') TAGS
+      a.link-button.rss(href='/rss.xml') RSS

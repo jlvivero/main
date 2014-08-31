@@ -1,11 +1,8 @@
-@import "helpers.scss";
-
 @import 'base.scss';
 @import 'navigation.scss';
-
-@import 'post-list.scss';
+@import 'content.scss';
+@import 'footer.scss';
 
 #content {
-  padding-bottom: 50px;
-  margin-top: 60px;
+  @import 'post-list.scss';
 }

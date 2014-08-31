@@ -1,24 +1,17 @@
 @import 'helpers.scss';
 
-.shown-after-font-loaded {
-  visibility: hidden;
-  @include opacity(0);
-}
-
-.wf-active .shown-after-font-loaded {
-  visibility: visible;
-  @include opacity(1);
-}
-
-#Navigation {
+#navigation {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 40px;
-  padding: 3px 0;
+  height: 60px;
+  padding: 0;
   background-color: white;
   @include opacity(0.7);
+
+  @media #{$mobile-portrait} { height: 40px; }
+  @media #{$mobile-landscape} { height: 40px; }
 
   div.nav-contents {
     width: 800px;
@@ -27,92 +20,24 @@
     @media #{$mobile-landscape} { width: 100%; }
   }
 
-  a.link-button {
+  a.link-button, a.link-button:visited {
     display: block;
     float: left;
-    width: 38px;
-    height: 38px;
-    margin: 0 auto;
-    border-radius: 20px;
-    overflow: hidden;
-    text-align: center;
-    @include transition((background .1s linear, color .1s linear));
+    font-family: Lato, 'sans-serif';
+    color: $black;
     text-decoration: none;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 5px;
+    @include box-sizing(border-box);
 
-    &.home {
-      color: #FF4136;
-      border: 1px solid #FF4136;
-    }
-    &.home:hover {
-      color: white;
-      background-color: #FF4136;
-    }
-    &.rss {
-      color: #85144B;
-      border: 1px solid #85144B;
-      margin-left: 2px;
-    }
-    &.rss:hover {
-      color: white;
-      background-color: #85144B;
-    }
-    &.tags {
-      color: #3D9970;
-      border: 1px solid #3D9970;
-      margin-left: 2px;
-    }
-    &.tags:hover {
-      color: white;
-      background-color: #3D9970;
-    }
-    i {
-      font-size: 26px;
-      line-height: 38px;
-
-      &.fa-tags {
-        margin-left: 2px;
-        line-height: 40px;
-        height: 38px;
-      }
-    }
-  }
-
-  a.profile-image {
-    position: relative;
-    display: block;
-    width: 40px;
-    height: 40px;
-    margin: 0 auto;
-    text-decoration: none;
-
-    img {
-      display: block;
-      margin: 0;
-      height: 0;
-      width: 40px;
-      height: 40px;
-      border-radius: 20px;
+    &:hover {
+      border-bottom: 5px solid $black;
+      @media #{$mobile-portrait} { border-bottom: none; }
+      @media #{$mobile-landscape} { border-bottom: none; }
     }
 
-    div.about-me {
-      position: absolute;
-      color: black;
-      font-weight: 100;
-      width: 100px;
-      height: 40px;
-      line-height: 40px;
-      font-size: 20px;
-      top: 0px;
-      right: 50px;
-      text-align: right;
-      @include opacity(0);
-      @include transition(opacity .1s linear);
-      @media #{$mobile-portrait} { display: none; }
-      @media #{$mobile-landscape} { display: none; }
-    }
-
-    &:hover div.about-me {
-      @include opacity(1);
-    }
+    @media #{$mobile-portrait} { height: 40px; line-height: 40px; }
+    @media #{$mobile-landscape} { height: 40px; line-height: 40px; }
   }
 }
