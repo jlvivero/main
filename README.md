@@ -1,13 +1,15 @@
-noraesae.net
-============
+## Currently, I use [Medium](https://medium.com/@noraesae) as a main blog. The posts in `blog.noraesae.net` will be moved to the Medium in a while. This repository remains to be referred to by DocPad users.
 
-DocPad source code of [noraesae.net](http://noraesae.net).
+blog.noraesae.net
+=================
+
+DocPad source code of [blog.noraesae.net](http://blog.noraesae.net).
 
 Install
 -------
 
 ```
-$ git clone https://github.com/noraesae/net.git
+$ git clone https://github.com/noraesae/blog.git
 $ cd net
 $ npm install
 ```
