@@ -93,7 +93,7 @@ docpad.coffee
 
 The `README.md` and `package.json` files are for their well-known roles. Nothing special. You can freely edit them. The `node_modules` directory is also for its own role, containing NPM packages.
 
-`docpad.coffee` is a configuration file for the DocPad project. You can configurate DocPad itself or its plugins with this file. We may look into this file later.
+`docpad.coffee` is a configuration file for the DocPad project. You can configure DocPad itself or its plugins with this file. We may look into this file later.
 
 The most important structure is the `src` directory. It has three subdirectories, `documents`, `files` and `layouts`. I'll explain how DocPad works with the directories in the next section.
 
@@ -136,7 +136,7 @@ html
 
 Now when you run `docpad run`, you can open the index page in `http://localhost:9778`. Also you can find the pipelined output, `index.html` in the `out` directory.
 
-Like `.html.jade`, you may consider using `.css.scss` or `.js.coffee`. Many pipelinings are supported with several plugins, so it worths checking the list in a [plugin page](http://docpad.org/docs/plugins).
+Like `.html.jade`, you may consider using `.css.scss` or `.js.coffee`. Many pipelinings are supported with several plugins, so it is worth checking the list in a [plugin page](http://docpad.org/docs/plugins).
 
 Add Posts
 ----------
