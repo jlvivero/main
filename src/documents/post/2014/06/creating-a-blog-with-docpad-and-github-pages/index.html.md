@@ -333,7 +333,7 @@ html
 
 To list the tags up, I used a `getFilesAtPath` function which just list all files in a given directory. You can also get a title and url from the tag files. Now when you run `docpad run` and open `http://localhost:9778/`, you can see the tag list.
 
-Until now, we've implemented a simple tag functionality in our blog. You also can have the option to use a [TagCloud](https://github.com/rantecki/docpad-plugin-tagcloud) plugin. It helps you get the list of the tags easily and also provides a weight for each tag. It worths checking it out.
+Until now, we've implemented a simple tag functionality in our blog. You also can have the option to use a [TagCloud](https://github.com/rantecki/docpad-plugin-tagcloud) plugin. It helps you get the list of the tags easily and also provides a weight for each tag. It is worth checking it out.
 
 Deploy
 ------
