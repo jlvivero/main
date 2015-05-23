@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 rm -rf out
-docpad deploy-ghpages --env static
+./node_modules/.bin/docpad deploy-ghpages --env static
