@@ -15,11 +15,11 @@ docpadConfig =
 
   templateData:
     site:
-      title: 'noraesae'
-      url: 'http://noraesae.net'
-      email: 'me@noraesae.net'
-      description: "noraesae's blog"
-      keyword: "JavaScript,HTML5,CSS,Node.js,CoffeeScript,Frontend,Backend"
+      title: "JL's Bizzare Adventures"
+      url: 'https://jlvivero.github.io/'
+      email: 'josluivivgar@gmail.com'
+      description: "My page to show off projects and blog"
+      keyword: "Programming, Backend, Games, Gaming, Game Design"
 
     sortByTimestamp: (collection) ->
       collection.sortCollection (a, b) ->

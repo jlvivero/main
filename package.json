@@ -1,18 +1,18 @@
 {
-  "name": "noraesae.net",
+  "name": "JL's Bizzare Adventures",
   "version": "0.1.0",
-  "description": "noraesae.net with DocPad",
+  "description": "github page to show projects and blog",
   "engines": {
-    "node": "0.10",
-    "npm": "1.3"
+    "node": "0.12.13",
+    "npm": "3.10.3"
   },
   "dependencies": {
-    "docpad": "^6.78.1",
-    "docpad-plugin-coffeescript": "~2.4.0",
-    "docpad-plugin-ghpages": "~2.4.3",
-    "docpad-plugin-jade": "~2.7.0",
-    "docpad-plugin-marked": "~2.2.1",
-    "docpad-plugin-nodesass": "^2.7.0",
+    "docpad": "~6.78.6",
+    "docpad-plugin-coffeescript": "~2.5.0",
+    "docpad-plugin-ghpages": "~2.4.4",
+    "docpad-plugin-jade": "~2.10.0",
+    "docpad-plugin-marked": "~2.3.0",
+    "docpad-plugin-nodesass": "~2.8.2",
     "docpad-plugin-tagcloud": "~2.0.1",
     "docpad-plugin-tags": "~2.0.7",
     "moment": "^2.10.3"
