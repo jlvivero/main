@@ -17,8 +17,7 @@ html
     include ../common/navigation.jade
     div#content
       div.info
-        h1.title= document.title
-        div.datetime= convertTimestampToRfc822(document.timestamp)
+        h2.title= document.title
       div.content!= content
 
     include ../common/footer.jade
