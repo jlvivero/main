@@ -4,7 +4,7 @@ each post, i in arrangePostData(getCollection('html').findAll({layout: 'post'}).
 
   div.post
     p.datetime= convertTimestampToRfc822(post.timestamp)
-    a.title(href='#{removeIndexHtmlFromUrl(post.url)}')
+    a.title(href='#{post.url}')
       h2= post.title
     p.tags
       each tag in post.tags

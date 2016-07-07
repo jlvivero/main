@@ -26,7 +26,7 @@ docpadConfig =
         b.get('timestamp') - a.get('timestamp')
 
     removeIndexHtmlFromUrl: (url) ->
-      url.replace '/index.html', ''
+      url.replace '/index.html', '/index.html'
 
     convertTimestampToRfc822: (timestamp) ->
       datetime = moment.unix(Number(timestamp)).zone(moment().zone())
