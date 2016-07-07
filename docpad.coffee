@@ -12,6 +12,9 @@ docpadConfig =
       injectDocumentHelper: (doc) ->
         doc.setMeta
           layout: 'tag'
+    ghpages:
+      deployBranch: 'master'
+      deployRemote: 'pages'
 
   templateData:
     site:
@@ -26,7 +29,7 @@ docpadConfig =
         b.get('timestamp') - a.get('timestamp')
 
     removeIndexHtmlFromUrl: (url) ->
-      url.replace '/index.html', '/index.html'
+      url.replace '/index.html', ''
 
     convertTimestampToRfc822: (timestamp) ->
       datetime = moment.unix(Number(timestamp)).zone(moment().zone())
