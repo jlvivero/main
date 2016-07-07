@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+
+    title= document.title
+
+    link(rel='shortcut icon', href='/images/profile.png')
+    link(rel='stylesheet', type='text/css', href='/css/normalize.css')
+    link(rel='stylesheet', type='text/css', href='/css/post.css')
+    link(rel='stylesheet', type='text/css', href='/css/highlight.default.css')
+    link(rel='stylesheet', type='text/css', href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic')
+    link(rel='stylesheet', type='text/css', href='//fonts.googleapis.com/css?family=Lato:900,300')
+
+  body
+    include ../common/navigation.jade
+    div#content
+      div.info
+        h1.title= document.title
+        div.datetime= convertTimestampToRfc822(document.timestamp)
+      div.content!= content
+
+    include ../common/footer.jade
+
+    script(src='/js/jquery-1.11.1.min.js')
+    script(src='/js/highlight.pack.js')
+    script(src='/js/md-highlight.js')
