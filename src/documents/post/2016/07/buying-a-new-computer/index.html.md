@@ -12,10 +12,12 @@ So after 8 years, I finally decided to buy a new desktop, I've been wanting to g
 
 The first thing I had to do was inform myself, I hadn't been up to date with computer parts since well 2008, and even then I have never been super involved in the topic. So the first thing I did was ask friends about it, and I found out there were generally two sides.  
 
-- People who want a future proof computer: that means new generation the highest end specs so that your computer takes a long time to be obsolete.
-- People who don't believe future proof exists: that means they always go for the more bang for your buck and try to cut costs, because they know eventually even if you buy the best of the best it will become obsolete
+- People who want a future proof computer: that means new generation the highest end specs so that your computer takes a long time to be obsolete.  
 
-Now I think I'm somewhere in between, mainly because I want to be able to not need a major upgrade in at least a year. The reason behind this is because I'm in my last year of college, and I don't want to spend a huge amount of money until I graduate from college. This buy has to be able to work out for the remainder of my life in college.
+- People who don't believe future proof exists: that means they always go for the more bang for your buck and try to cut costs, because they know eventually even if you buy the best of the best it will become obsolete  
+
+Now I think I'm somewhere in between, mainly because I want to be able to not need a major upgrade in at least a year. The reason behind this is because I'm in my last year of college, and I don't want to spend a huge amount of money until I graduate from college. This buy has to be able to work out for the remainder of my life in college.  
+
 
 Another important thing is that I plan to work on the game industry as a developer, so that means my computer has to be able to run the latest game engines.
 
@@ -42,3 +44,5 @@ Now, because of the fact that I'm going for new gen that means that some parts a
 Today I'm buying the first parts of my new computer which will be the SSD, I can put it on my old rig while I get the rest of the parts so it's the best choice.
 
 That's all for today, this is my first time blogging, so I hope the read wasn't obnoxious. I'll probably try and keep it slightly shorter next time
+
+You can find the link to my future rig [here](http://pcpartpicker.com/list/Y36XPs)

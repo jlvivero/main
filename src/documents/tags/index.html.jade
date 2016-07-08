@@ -15,7 +15,7 @@ html
   body
     include ../../common/navigation.jade
     div#content
-      h1.tag-title Tags
+      h2.tag-title Tags
       div.tagcloud
         each tag in getTagCloud()
           a.tag(href='#{tag.url}', style='font-size: #{tagWeightToFontSize(tag.weight)}px')= tag.tag
