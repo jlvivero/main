@@ -23,9 +23,9 @@ So I searched stackoverflow for a similar problem and fortunately I found some i
 
 ### Props  
 
-What I was missing was how props really work, and [this Stack overflow thread](http://stackoverflow.com/questions/24147331/react-the-right-way-to-pass-form-element-state-to-sibling-parent-elements) helped me understand it correctly, and conveniently for me, it had a pretty similar problem as mine, while mine was different, it was about the same.
+What I was missing was how props really work, and [this Stack overflow thread](http://stackoverflow.com/questions/24147331/react-the-right-way-to-pass-form-element-state-to-sibling-parent-elements) helped me understand it correctly, and conveniently for me, it had a pretty similar problem as mine, there were some differences but that was still good enough to send me on my way.
 
-The thing is that despite everything, the important part was that I started to understand how props work, and I begin to understand how the basic design of a react webpage worked, and I finally started to see react not as a messy overwhelming framework, but as a very elegant solution for programmers to be able to make webpages like you would design any other application.
+The important thing was that I started to understand how props work, and I begin to understand how the basic design of a react webpage worked, and I finally started to see react not as a messy overwhelming framework, but as a very elegant solution for programmers to be able to make webpages like you would design any other application.
 
 
 *I leave here all the links that I used to learn react, I hope they're useful to anyone that needs them:*  
