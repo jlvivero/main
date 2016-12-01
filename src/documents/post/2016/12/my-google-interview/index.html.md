@@ -70,7 +70,7 @@ This time I was not gonna be unprepared, I was not gonna choke. So I studied, I 
 
 The interview came and unfortunately my headset wasn't working. So I had to take the interview with the phone on my hand. It wasn't a big deal, but the real problem was that the sound was really bad. I couldn't hear the interviewer half the time and he couldn't hear me the other half.
 
-That sucked, but I wasn't nervous, he asked the question, I asked clarification back. I thought of a few possible solutions, I figured what data structure would help me and I started solving the problem.
+That sucked, but I wasn't nervous, he asked the question, I asked him to clarify some things about the problem. I thought of a few possible solutions, I figured what data structure would help me and I started solving the problem.
 
 The approach I took was wrong, but he quickly made me realize that by asking a key question. The problem was that if that method was wrong my next best solution wasn't that efficient. The brute force solution was **O(n^2)**, my second best solution (which in this case was the best solution that didn't have a key mistake) was **O(nlogn)** which was better but there had to be a O(n) solution.
 
