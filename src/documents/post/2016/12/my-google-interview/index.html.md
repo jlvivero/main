@@ -11,15 +11,23 @@ tags:
 
 So I recently had an interview with *google*, and unfortunately I didn't get the job, but I'm gonna talk a little bit about my experience with the whole process, how I felt going through with it and what I learnt from it.
 
-Now to make it clear, while I did not sign an NDA, **I did agree to not disclose any interview problem**, so at most I'll mention what the problem was vaguely about. Regardless I won't focus on the problems themselves but on the buildup to me taking the interview and my state of mind when taking the interview. I'm here to just tell my story and hopefully anyone who reads from this can learn something from this
+Now to make it clear, while I did not sign an NDA, **I did agree to not disclose any interview problem**, so at most I'll mention what the problem was vaguely about. Regardless I won't focus on the problems themselves but on the buildup to me taking the interview and my state of mind when taking the interview.
+
+I'm here to just tell my story and hopefully anyone who reads from this can learn something from this
 
 ## How I got my interview  
 
-We'll start a year ago when I first applied to *google*, I wasn't really planning on applying but someone really close to me wanted to apply even though we both knew we probably wouldn't get a call back, this was for an internship (I am still going to school). We both applied and never got any callback, and we figured that was the end of it. Fast forward at the start of the semester, I get an email from *google*. It was an email asking for my updated resume, cause they felt that even though I didn't make the cut for the internship, maybe if I had done more things I'd be good for a full time position. So I sent my resume along with my school transcripts and after a few days I got another email.
+We'll start a year ago when I first applied to *google*, I wasn't really planning on applying but someone really close to me wanted to apply even though we both knew we probably wouldn't get a call back, this was for an internship (I am still going to school). We both applied and never got any callback, and we figured that was the end of it. Fast forward at the start of the semester, I get an email from *google*.
+
+It was an email asking for my updated resume, cause they felt that even though I didn't make the cut for the internship, maybe if I had done more things I'd be good for a full time position. So I sent my resume along with my school transcripts and after a few days I got another email.
 
 I got another email saying they liked my resume, and that they would like to schedule a simple phone screen where they could talk to me and get to know me, and tell me how the application process was gonna work. So we schedule the interview for a day and that was when it hit me...
 
-"Holy shit, I am not ready for an interview at all, I have not done any algorithms or data structures in 2 years" I don't think I'm a bad programmer to be honest, but interviews in high end companies require you to know how to write code that scales. Which is the one thing that you actually don't get much practice off doing school work, or even working on small projects for small companies. That means that so far, I've been good at solving problems in the most archaic way possible.
+"Holy shit, I am not ready for an interview at all, I have not done any algorithms or data structures in 2 years".
+
+I don't think I'm a bad programmer to be honest, but interviews in high end companies require you to know how to write code that scales. Which is the one thing that you actually don't get much practice off doing school work, or even working on small projects for small companies.
+
+That means that so far, I've been good at solving problems in the most archaic way possible.
 
 ## The phone screen  
 
