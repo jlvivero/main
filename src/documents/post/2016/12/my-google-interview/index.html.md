@@ -74,7 +74,7 @@ That sucked, but I wasn't nervous, he asked the question, I asked him to clarify
 
 The approach I took was wrong, but he quickly made me realize that by asking a key question. The problem was that if that method was wrong my next best solution wasn't that efficient. The brute force solution was **O(n^2)**, my second best solution (which in this case was the best solution that didn't have a key mistake) was **O(nlogn)** which was better but there had to be a O(n) solution.
 
-At the moment I couldn't think of any, I don't shut down and stop thinking thought, I talked about my thought process but ultimately, I can't find a O(n) solution and I end up solving it with my **O(nlogn)** method.
+At that moment I couldn't think of any solution, I didn't freeze and continued thinking though, I talked about my thought process but ultimately, I couldn't find a O(n) solution and I ended up solving it with my **O(nlogn)** method.
 
 ## The aftermath  
 
