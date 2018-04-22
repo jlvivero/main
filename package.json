@@ -1,13 +1,13 @@
 {
-  "name": "JL's Bizzare Adventures",
+  "name": "jl's-bizzare-adventures",
   "version": "0.1.0",
   "description": "github page to show projects and blog",
   "engines": {
-    "node": "0.12.13",
-    "npm": "3.10.3"
+    "node": "8.11.1",
+    "npm": "5.8.0"
   },
   "dependencies": {
-    "docpad": "~6.78.6",
+    "docpad": "~6.79.4",
     "docpad-plugin-coffeescript": "~2.5.0",
     "docpad-plugin-ghpages": "~2.4.4",
     "docpad-plugin-jade": "~2.10.0",
@@ -20,6 +20,5 @@
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
     "start": "node_modules/docpad/bin/docpad-server"
-  },
-  "devDependencies": {}
+  }
 }
